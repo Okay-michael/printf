@@ -14,8 +14,8 @@ int s_handler(va_list params)
 	int i = 0;
 	if (params == NULL)
 		return 0;
-	char *strng = va_arg(params, char*);
-	while(strng[i] != 0)
+	char *strng = va_arg(params, char *);
+	while (strng[i] != 0)
 	{
 		_putchar(strng[i]);
 		i++;
@@ -29,4 +29,6 @@ int f_select(char specifier, va_list params)
 		return c_handler(params);
 	if (specifier == 's')
 		return s_handler(params);
+	if (specifier == 'd')
+		return int_handler(params);
 }
