@@ -1,8 +1,14 @@
 #include "main.h"
 
+/**
+ * _printf - this function mimicks the stdlib printf function
+ * @format: this is the constant string part
+ * @...: this is the variadic argument set
+ * Return: it returns the number of arguments printed
+ */
 int _printf(const char *format, ...)
 {
-	int i, j, pcounter;
+	int i, j, pctr;
 	va_list params;
 	char *handled_cases = "cdisbuoxX";
 
@@ -18,29 +24,28 @@ int _printf(const char *format, ...)
 			i++;
 			if (format[i] == '%')
 			{
-				pcounter += _putchar('%');
+				pctr += _putchar('%');
 			}
 			else
 			{
 				for (j = 0; handled_cases[j]; j++)
 					if (format[i] == handled_cases[j])
 					{
-						pcounter += f_select(format[i],
-								params);
+						pctr += f_select(format[i], params);
 						break;
 					}
 				if (!handled_cases[j])
 				{
-					pcounter += _putchar('%');
-					pcounter += _putchar(format[i]);
+					pctr += _putchar('%');
+					pctr += _putchar(format[i]);
 				}
 			}
 		}
 		else
 		{
-			pcounter += _putchar(format[i]);
+			pctr += _putchar(format[i]);
 		}
 	}
 	va_end(params);
-	return (pcounter);
+	return (pctr);
 }
