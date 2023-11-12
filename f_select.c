@@ -1,17 +1,16 @@
 #include "main.h"
-
 int c_handler(va_list params)
 {
 	if (params == NULL)
-		return 0;
+		return (0);
 	char C = va_arg(params, int);
-
 	return _putchar(C);
 }
 
 int s_handler(va_list params)
 {
 	int i = 0;
+
 	if (params == NULL)
 		return 0;
 	char *strng = va_arg(params, char *);
