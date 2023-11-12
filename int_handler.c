@@ -12,7 +12,7 @@ int int_handler(va_list params)
 	param_digits = 0;
 	counter = 1;
 	divisor = 1;
-	last_digit = 1;
+	last_digit = num;
 	if (num == 0) /*when number is 0*/
 	{
 		_putchar(0);
@@ -23,7 +23,7 @@ int int_handler(va_list params)
 		_putchar('-');
 		num = -num;
 	}
-	while (num > 0) /*get length of num as param_digits*/
+	while (last_digit > 0) /*get length of num as param_digits*/
 	{
 		last_digit /= 10;
 		param_digits++;
