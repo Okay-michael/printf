@@ -6,7 +6,7 @@
  */
 int int_handler(va_list params)
 {
-	int num, param_digits, last_digit, divisor, counter, reserved_digits;
+	int num, param_digits, last_digit, divisor, counter, d_digits;
 
 	num = va_arg(params, int);
 	param_digits = 0;
@@ -28,7 +28,7 @@ int int_handler(va_list params)
 		last_digit /= 10;
 		param_digits++;
 	}
-	reserved_digits = param_digits;
+	/*d_digits = param_digits*/
 	while (param_digits > 0) /*print each digit*/
 	{
 		while (counter < param_digits)
@@ -37,9 +37,9 @@ int int_handler(va_list params)
 			counter++;
 		}
 		last_digit = num / divisor;
-		_putchar('0' + last_digit);
+		d_digits = _putchar(last_digit);
 		num %= divisor;
 		param_digits--;
 	}
-	return (reserved_digits);
+	return (d_digits);
 }
