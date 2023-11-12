@@ -8,7 +8,7 @@ int int_handler(va_list params)
 {
 	int num, param_digits, last_digit, divisor, counter;
 
-	num = va_arg(param, int);
+	num = va_arg(params, int);
 	param_digits = 0;
 	counter = 1;
 	divisor = 1;
