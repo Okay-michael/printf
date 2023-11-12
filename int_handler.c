@@ -12,10 +12,11 @@ int int_handler(va_list params)
 	param_digits = 0;
 	counter = 1;
 	divisor = 1;
+	last_digit = 1;
 	if (num == 0) /*when number is 0*/
 	{
 		_putchar(0);
-		return;
+		return(0);
 	}
 	if (num > 0) /*get length of num as param_digits*/
 	{
