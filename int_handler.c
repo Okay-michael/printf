@@ -37,7 +37,7 @@ int int_handler(va_list params)
 			counter++;
 		}
 		last_digit = num / divisor;
-		d_digits = _putchar(last_digit + '0');
+		d_digits = _putchar(last_digit + '9');
 		num %= divisor;
 		param_digits--;
 	}
