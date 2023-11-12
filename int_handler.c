@@ -23,6 +23,11 @@ int int_handler(va_list params)
 		last_digit /= 10;
 		param_digits++;
 	}
+	if (num < 0)
+	{
+		_putchar('-');
+		num = -num;
+	}
 	returned_digits = param_digits;
 	while (param_digits > 0) /*print each digit*/
 	{
@@ -32,7 +37,7 @@ int int_handler(va_list params)
 			counter++;
 		}
 		last_digit = num / divisor;
-		putchar('0' + last_digit);
+		_putchar('0' + last_digit);
 		num %= divisor;
 		param_digits--;
 	}
