@@ -8,8 +8,8 @@ int _printf(const char *format, ...);
 int c_handler(va_list params);
 int s_handler(va_list params);
 int int_handler(va_list params);
+int bin_handler(va_list params);
 int f_select(char specifier, va_list params);
+int _putint(long nbr, int cntr);
+int play_int(va_list lst);
 #endif
-
-
-
