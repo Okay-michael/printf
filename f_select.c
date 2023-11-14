@@ -31,5 +31,7 @@ int f_select(char specifier, va_list params)
 		return (hex_handler(params));
 	if (specifier == 'X')
 		return (HEX_handler(params));
+	if (specifier == 'p')
+		return (p_handler(params));
 	return (0);
 }

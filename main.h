@@ -18,4 +18,5 @@ int oct_handler(va_list params);
 int rot_handler(va_list params);
 int hex_handler(va_list params);
 int HEX_handler(va_list params);
+int p_handler(va_list params);
 #endif
