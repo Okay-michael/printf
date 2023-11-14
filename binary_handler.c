@@ -9,7 +9,7 @@ int bin_handler(va_list params)
 {
 	int binary[32];
 	int i = 0, ctr = 0;
-	unsigned int integer  = va_arg(lst, int);
+	unsigned int integer  = va_arg(params, int);
 
 	if (integer == 0)
 	{
