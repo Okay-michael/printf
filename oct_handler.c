@@ -1,6 +1,7 @@
 #include "main.h"
 
-/*oct_handler - converts and prints an unsigned int into octal numbers
+/**
+ * oct_handler - converts and prints an unsigned int into octal numbers
  * @params: the variadic argument gotten
  * Return: the number of characters printed
  */
