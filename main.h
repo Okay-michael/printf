@@ -15,4 +15,6 @@ int int_handler(va_list lst);
 int unsigned_handler(va_list params);
 int r_handler(va_list params);
 int oct_handler(va_list params);
+int hex_handler(va_list params);
+int HEX_handler(va_list params);
 #endif
