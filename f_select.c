@@ -17,7 +17,5 @@ int f_select(char specifier, va_list params)
 		return (s_handler(params));
 	if (specifier == 'd' || specifier == 'i')
 		return (int_handler(params));
-	/*if (specifier == 'b')
-		return (bin_handler(params));*/
 	return (0);
 }
