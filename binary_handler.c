@@ -19,9 +19,9 @@ int bin_handler(va_list params)
 
 	while (integer)
 	{
-		binary[i++] = params % 2;
-		params /= 2;
-		ctr++;
+		binary[i++] = integer % 2;
+		ctr += 1;
+		integer /= 2;
 	}
 
 	while (--i >= 0)

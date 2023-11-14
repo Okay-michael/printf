@@ -18,4 +18,6 @@ int f_select(char specifier, va_list params)
 	if (specifier == 'd' || specifier == 'i')
 		return (int_handler(params));
 	return (0);
+	if (specifier == 'b')
+		return (binary_handler(params));
 }
