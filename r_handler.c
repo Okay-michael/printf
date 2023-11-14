@@ -9,6 +9,7 @@
 int r_handler(va_list params)
 {
 	int i = 0;
+	int r = 0;
 	char *strng;
 
 	if (params == NULL)
@@ -20,11 +21,12 @@ int r_handler(va_list params)
 	while (strng[i] != 0)
 	{
 		i++;
+		r++;
 	}
-	while (--i)
+	while (i--)
 	{
 		_putchar(strng[i]);
 	}
 
-	return (i);
+	return (r);
 }
