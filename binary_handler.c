@@ -26,7 +26,7 @@ int bin_handler(va_list params)
 
 	while (--i >= 0)
 	{
-		_putchar(bin[i] + '0');
+		_putchar(binary[i] + '0');
 	}
 
 	return (ctr);
