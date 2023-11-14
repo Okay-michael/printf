@@ -25,6 +25,8 @@ int f_select(char specifier, va_list params)
 		return (r_handler(params));
 	if (specifier == 'o')
 		return (oct_handler(params));
+	if (specifier == 'R')
+		return (rot_handler(params));
 	if (specifier == 'x')
 		return (hex_handler(params));
 	if (specifier == 'X')

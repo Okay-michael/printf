@@ -10,7 +10,7 @@ int _printf(const char *format, ...)
 {
 	int i, j, pctr;
 	va_list params;
-	char *handled_cases = "cdisbuoxXr";
+	char *handled_cases = "cdisbuoxXrF";
 
 	va_start(params, format);
 	if (!format || (format[0] == '%' && !format[1]))
