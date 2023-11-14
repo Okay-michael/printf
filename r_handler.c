@@ -8,7 +8,6 @@
  */
 int r_handler(va_list params)
 {
-	int r;
 	int i = 0;
 	char *strng;
 
@@ -22,9 +21,9 @@ int r_handler(va_list params)
 	{
 		i++;
 	}
-	for (r = i; r < i; r--)
+	while (--i)
 	{
-		_putchar(strng[r]);
+		_putchar(strng[i]);
 	}
 
 	return (i);

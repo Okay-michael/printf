@@ -19,12 +19,9 @@ int f_select(char specifier, va_list params)
 		return (int_handler(params));
 	if (specifier == 'b')
 		return (binary_handler(params));
-<<<<<<< HEAD
 	if (specifier == 'u')
 		return (unsigned_handler(params));
-=======
 	if (specifier == 'r')
 		return (r_handler(params));
->>>>>>> 0a30fea27fff5203b1c62591ae826c4b20b5e0a9
 	return (0);
 }
