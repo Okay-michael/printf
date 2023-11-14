@@ -10,6 +10,6 @@ int int_handler(va_list lst)
 	int cntr;
 	int fetch = va_arg(lst, int);
 
-	cntr = _print_int(fetch, 0);
+	cntr = print_int(fetch, 0);
 	return (cntr);
 }
