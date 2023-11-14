@@ -10,6 +10,6 @@ int s_handler(va_list params);
 int int_handler(va_list params);
 int bin_handler(va_list params);
 int f_select(char specifier, va_list params);
-int _putint(long nbr, int cntr);
-int play_int(va_list lst);
+int print_int(long nbr, int cntr);
+int int_handler(va_list lst);
 #endif
