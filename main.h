@@ -12,4 +12,5 @@ int binary_handler(va_list params);
 int f_select(char specifier, va_list params);
 int print_int(long nbr, int cntr);
 int int_handler(va_list lst);
+int r_handler(va_list params);
 #endif
