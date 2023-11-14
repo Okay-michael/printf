@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * bin_handler - converts a pass args to it's binary equiv and prints to stdin
+ * binary_handler - converts a pass args to it's binary equiv
+ * and prints to stdin
  * @params: this is variable part of the function
  * Return: the number of characters printed.
  */
