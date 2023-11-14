@@ -6,17 +6,17 @@
  */
 int rot_handler(va_list params)
 {
+	char c;
 	const char *input = va_arg(params, const char *);
 	int printed = 0;
 
+	c = *input;
 	if (input == NULL)
 	{
 		return (0);
 	}
 	while (*input != '\0')
 	{
-		char c = *input;
-
 		if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		{
 			if ((c >= 'a' && c <= 'm') || (c >= 'A' && c <= 'M'))
