@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * rot_handler - prints rot function
- * @input: value
+ * @params: value
  * Return: always 0
  */
 int rot_handler(va_list params)
