@@ -14,4 +14,5 @@ int print_int(long nbr, int cntr);
 int int_handler(va_list lst);
 int unsigned_handler(va_list params);
 int r_handler(va_list params);
+int oct_handler(va_list params);
 #endif
