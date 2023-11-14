@@ -15,6 +15,8 @@ int s_handler(va_list params)
 		return (0);
 
 	strng = va_arg(params, char *);
+	if (!strng)
+		strng = "(null)";
 	while (strng[i] != 0)
 	{
 		_putchar(strng[i]);
