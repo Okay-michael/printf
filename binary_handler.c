@@ -5,7 +5,7 @@
  * @params: this is variable part of the function
  * Return: the number of characters printed.
  */
-int bin_handler(va_list params)
+int binary_handler(va_list params)
 {
 	int binary[32];
 	int i = 0, ctr = 0;
